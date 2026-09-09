@@ -127,10 +127,10 @@
       "font-family:'Pretendard','Pretendard Variable',-apple-system,system-ui,sans-serif;",
       'animation:aqp-fade .18s ease-out;}',
 
-      '.aqp-dialog{position:relative;width:100%;max-width:600px;box-sizing:border-box;',
-      'background:#0d2342;border:1px solid rgba(255,255,255,.12);border-radius:14px;',
-      'box-shadow:0 44px 100px -20px rgba(0,0,0,.62);padding:50px 48px 22px;',
-      'display:flex;flex-direction:column;gap:24px;text-align:center;word-break:keep-all;',
+      '.aqp-dialog{position:relative;width:100%;max-width:420px;box-sizing:border-box;',
+      'background:#0d2342;border:1px solid rgba(255,255,255,.12);border-radius:12px;',
+      'box-shadow:0 32px 74px -16px rgba(0,0,0,.62);padding:34px 32px 16px;',
+      'display:flex;flex-direction:column;gap:17px;text-align:center;word-break:keep-all;',
       'animation:aqp-pop .22s cubic-bezier(.2,.8,.3,1);}',
 
       '@keyframes aqp-fade{from{opacity:0}to{opacity:1}}',
@@ -138,48 +138,48 @@
       '@media(prefers-reduced-motion:reduce){.aqp-overlay,.aqp-dialog{animation:none}}',
 
       /* 닫기(X) */
-      '.aqp-x{position:absolute;top:14px;right:14px;width:36px;height:36px;padding:0;',
+      '.aqp-x{position:absolute;top:12px;right:12px;width:32px;height:32px;padding:0;',
       'display:flex;align-items:center;justify-content:center;background:transparent;border:0;',
       'border-radius:6px;cursor:pointer;color:rgba(255,255,255,.55);}',
       '.aqp-x:hover{color:#fff;background:rgba(255,255,255,.08);}',
 
       /* 머리 */
-      '.aqp-head{display:flex;flex-direction:column;align-items:center;gap:30px;}',
-      '.aqp-logo{height:62px;width:auto;display:block;}',
-      '.aqp-headtext{display:flex;flex-direction:column;align-items:center;gap:18px;}',
-      '.aqp-titlewrap{display:flex;flex-direction:column;align-items:center;gap:14px;}',
-      '.aqp-label{font-size:14px;font-weight:600;letter-spacing:.12em;color:#7f9fe0;}',
+      '.aqp-head{display:flex;flex-direction:column;align-items:center;gap:20px;}',
+      '.aqp-logo{height:44px;width:auto;display:block;}',
+      '.aqp-headtext{display:flex;flex-direction:column;align-items:center;gap:13px;}',
+      '.aqp-titlewrap{display:flex;flex-direction:column;align-items:center;gap:10px;}',
+      '.aqp-label{font-size:12px;font-weight:600;letter-spacing:.12em;color:#7f9fe0;}',
       // text-wrap:balance — 제목이 두 줄이 될 때 마지막 줄에 한 단어만 남는 것을 막아 줍니다.
-      '.aqp-title{margin:0;font-size:34px;line-height:1.3;letter-spacing:-.025em;font-weight:700;color:#fff;',
+      '.aqp-title{margin:0;font-size:24px;line-height:1.32;letter-spacing:-.025em;font-weight:700;color:#fff;',
       'text-wrap:balance;}',
       '.aqp-accent{color:#818cf8;}',
-      '.aqp-body{font-size:17px;line-height:1.7;color:#aebfd6;}',
+      '.aqp-body{font-size:14px;line-height:1.68;color:#aebfd6;}',
 
       /* 혜택 */
-      '.aqp-benefits{display:flex;flex-direction:column;gap:14px;padding:24px 26px;text-align:left;',
+      '.aqp-benefits{display:flex;flex-direction:column;gap:10px;padding:17px 18px;text-align:left;',
       'background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:10px;}',
-      '.aqp-benefit{display:flex;align-items:flex-start;gap:12px;}',
+      '.aqp-benefit{display:flex;align-items:flex-start;gap:9px;}',
       '.aqp-benefit>svg{flex:none;margin-top:3px;}',
-      '.aqp-benefit-text{display:flex;align-items:center;flex-wrap:wrap;gap:9px;',
-      'font-size:16.5px;line-height:1.55;color:#aebfd6;}',
+      '.aqp-benefit-text{display:flex;align-items:center;flex-wrap:wrap;gap:7px;',
+      'font-size:14px;line-height:1.55;color:#aebfd6;}',
       '.aqp-strong{font-weight:700;color:#fff;}',
 
       /* 마감 */
-      '.aqp-deadline{display:flex;align-items:center;justify-content:center;gap:9px;font-size:16px;color:#aebfd6;}',
+      '.aqp-deadline{display:flex;align-items:center;justify-content:center;gap:7px;font-size:14px;color:#aebfd6;}',
       '.aqp-dot{color:#2f5286;}',
 
       /* CTA */
-      '.aqp-cta{display:block;padding:19px 34px;font-size:17.5px;font-weight:700;letter-spacing:-.01em;',
+      '.aqp-cta{display:block;padding:15px 24px;font-size:15px;font-weight:700;letter-spacing:-.01em;',
       'color:#13345e;background:#fff;border-radius:6px;text-decoration:none;text-align:center;',
       'transition:background .15s;}',
       '.aqp-cta:hover{background:#e8edf6;}',
 
-      '.aqp-footnote{font-size:13px;line-height:1.6;color:#7089ad;}',
+      '.aqp-footnote{font-size:11.5px;line-height:1.6;color:#7089ad;}',
 
       /* 하단 버튼 */
       '.aqp-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;',
-      'margin-top:2px;padding-top:16px;border-top:1px solid rgba(255,255,255,.1);}',
-      '.aqp-textbtn{padding:8px 4px;font:inherit;font-size:14px;background:transparent;border:0;',
+      'margin-top:1px;padding-top:12px;border-top:1px solid rgba(255,255,255,.1);}',
+      '.aqp-textbtn{padding:7px 4px;font:inherit;font-size:12.5px;background:transparent;border:0;',
       'color:#7f9fe0;cursor:pointer;border-radius:4px;}',
       '.aqp-textbtn:hover{color:#fff;text-decoration:underline;}',
       '.aqp-textbtn--close{color:#aebfd6;font-weight:600;}',
@@ -216,27 +216,27 @@
   /* ------------------------------------------------------------ 아이콘 */
 
   function checkIcon() {
-    return '<svg width="19" height="19" viewBox="0 0 18 18" fill="none" stroke="#818cf8" ' +
+    return '<svg width="16" height="16" viewBox="0 0 18 18" fill="none" stroke="#818cf8" ' +
       'stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
       '<path d="M3.5 9.5 L7 13 L14.5 5"></path></svg>';
   }
 
   function arrowIcon() {
-    return '<svg width="15" height="15" viewBox="0 0 14 14" fill="none" stroke="#5c7cb0" ' +
+    return '<svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="#5c7cb0" ' +
       'stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" ' +
       'style="flex:none" aria-hidden="true">' +
       '<path d="M2.5 7 H11 M7.5 3.5 L11 7 L7.5 10.5"></path></svg>';
   }
 
   function calendarIcon() {
-    return '<svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="#aebfd6" ' +
+    return '<svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="#aebfd6" ' +
       'stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
       '<rect x="2" y="3.2" width="12" height="10.8" rx="1.6"></rect>' +
       '<path d="M2 6.4 H14 M5.2 1.6 V3.2 M10.8 1.6 V3.2"></path></svg>';
   }
 
   function closeIcon() {
-    return '<svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" ' +
+    return '<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" ' +
       'stroke-width="1.6" stroke-linecap="round" aria-hidden="true">' +
       '<path d="M3 3 L13 13 M13 3 L3 13"></path></svg>';
   }
