@@ -127,10 +127,10 @@
       "font-family:'Pretendard','Pretendard Variable',-apple-system,system-ui,sans-serif;",
       'animation:aqp-fade .18s ease-out;}',
 
-      '.aqp-dialog{position:relative;width:100%;max-width:420px;box-sizing:border-box;',
+      '.aqp-dialog{position:relative;width:100%;max-width:520px;box-sizing:border-box;',
       'background:#0d2342;border:1px solid rgba(255,255,255,.12);border-radius:12px;',
-      'box-shadow:0 32px 74px -16px rgba(0,0,0,.62);padding:34px 32px 16px;',
-      'display:flex;flex-direction:column;gap:17px;text-align:center;word-break:keep-all;',
+      'box-shadow:0 32px 74px -16px rgba(0,0,0,.62);padding:30px 34px 14px;',
+      'display:flex;flex-direction:column;gap:15px;text-align:center;word-break:keep-all;',
       'animation:aqp-pop .22s cubic-bezier(.2,.8,.3,1);}',
 
       '@keyframes aqp-fade{from{opacity:0}to{opacity:1}}',
@@ -144,9 +144,9 @@
       '.aqp-x:hover{color:#fff;background:rgba(255,255,255,.08);}',
 
       /* 머리 */
-      '.aqp-head{display:flex;flex-direction:column;align-items:center;gap:20px;}',
-      '.aqp-logo{height:44px;width:auto;display:block;}',
-      '.aqp-headtext{display:flex;flex-direction:column;align-items:center;gap:13px;}',
+      '.aqp-head{display:flex;flex-direction:column;align-items:center;gap:17px;}',
+      '.aqp-logo{height:40px;width:auto;display:block;}',
+      '.aqp-headtext{display:flex;flex-direction:column;align-items:center;gap:11px;}',
       '.aqp-titlewrap{display:flex;flex-direction:column;align-items:center;gap:10px;}',
       '.aqp-label{font-size:12px;font-weight:600;letter-spacing:.12em;color:#7f9fe0;}',
       // text-wrap:balance — 제목이 두 줄이 될 때 마지막 줄에 한 단어만 남는 것을 막아 줍니다.
@@ -156,7 +156,7 @@
       '.aqp-body{font-size:14px;line-height:1.68;color:#aebfd6;}',
 
       /* 혜택 */
-      '.aqp-benefits{display:flex;flex-direction:column;gap:10px;padding:17px 18px;text-align:left;',
+      '.aqp-benefits{display:flex;flex-direction:column;gap:9px;padding:15px 18px;text-align:left;',
       'background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:10px;}',
       '.aqp-benefit{display:flex;align-items:flex-start;gap:9px;}',
       '.aqp-benefit>svg{flex:none;margin-top:3px;}',
