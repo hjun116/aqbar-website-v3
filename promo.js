@@ -127,10 +127,17 @@
       "font-family:'Pretendard','Pretendard Variable',-apple-system,system-ui,sans-serif;",
       'animation:aqp-fade .18s ease-out;}',
 
+      /* 데스크톱에서는 팝업을 화면 정중앙이 아니라 조금 아래에 둡니다.
+         홈페이지 히어로 헤드라인(화면 위쪽 182~313px)이 가려지지 않게 하려는 것.
+         화면 높이가 넉넉하면 325px까지 내려가고, 낮으면 그만큼만 내려가
+         팝업이 화면 밖으로 잘리지 않습니다. (520px = 팝업 높이 + 아래 여백) */
+      '@media(min-width:769px){.aqp-overlay{align-items:flex-start;',
+      'padding-top:min(325px,max(20px,calc(100vh - 520px)));}}',
+
       '.aqp-dialog{position:relative;width:100%;max-width:420px;box-sizing:border-box;',
       'background:#0d2342;border:1px solid rgba(255,255,255,.12);border-radius:12px;',
-      'box-shadow:0 32px 74px -16px rgba(0,0,0,.62);padding:34px 32px 16px;',
-      'display:flex;flex-direction:column;gap:17px;text-align:center;word-break:keep-all;',
+      'box-shadow:0 32px 74px -16px rgba(0,0,0,.62);padding:26px 30px 12px;',
+      'display:flex;flex-direction:column;gap:13px;text-align:center;word-break:keep-all;',
       'animation:aqp-pop .22s cubic-bezier(.2,.8,.3,1);}',
 
       '@keyframes aqp-fade{from{opacity:0}to{opacity:1}}',
@@ -144,24 +151,24 @@
       '.aqp-x:hover{color:#fff;background:rgba(255,255,255,.08);}',
 
       /* 머리 */
-      '.aqp-head{display:flex;flex-direction:column;align-items:center;gap:20px;}',
-      '.aqp-logo{height:44px;width:auto;display:block;}',
-      '.aqp-headtext{display:flex;flex-direction:column;align-items:center;gap:13px;}',
-      '.aqp-titlewrap{display:flex;flex-direction:column;align-items:center;gap:10px;}',
+      '.aqp-head{display:flex;flex-direction:column;align-items:center;gap:14px;}',
+      '.aqp-logo{height:34px;width:auto;display:block;}',
+      '.aqp-headtext{display:flex;flex-direction:column;align-items:center;gap:10px;}',
+      '.aqp-titlewrap{display:flex;flex-direction:column;align-items:center;gap:8px;}',
       '.aqp-label{font-size:12px;font-weight:600;letter-spacing:.12em;color:#7f9fe0;}',
       // text-wrap:balance — 제목이 두 줄이 될 때 마지막 줄에 한 단어만 남는 것을 막아 줍니다.
       '.aqp-title{margin:0;font-size:24px;line-height:1.32;letter-spacing:-.025em;font-weight:700;color:#fff;',
       'text-wrap:balance;}',
       '.aqp-accent{color:#818cf8;}',
-      '.aqp-body{font-size:14px;line-height:1.68;color:#aebfd6;}',
+      '.aqp-body{font-size:14px;line-height:1.6;color:#aebfd6;}',
 
       /* 혜택 */
-      '.aqp-benefits{display:flex;flex-direction:column;gap:10px;padding:17px 18px;text-align:left;',
+      '.aqp-benefits{display:flex;flex-direction:column;gap:8px;padding:14px 16px;text-align:left;',
       'background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:10px;}',
       '.aqp-benefit{display:flex;align-items:flex-start;gap:9px;}',
       '.aqp-benefit>svg{flex:none;margin-top:3px;}',
       '.aqp-benefit-text{display:flex;align-items:center;flex-wrap:wrap;gap:7px;',
-      'font-size:14px;line-height:1.55;color:#aebfd6;}',
+      'font-size:14px;line-height:1.5;color:#aebfd6;}',
       '.aqp-strong{font-weight:700;color:#fff;}',
 
       /* 마감 */
@@ -169,17 +176,17 @@
       '.aqp-dot{color:#2f5286;}',
 
       /* CTA */
-      '.aqp-cta{display:block;padding:15px 24px;font-size:15px;font-weight:700;letter-spacing:-.01em;',
+      '.aqp-cta{display:block;padding:13px 22px;font-size:15px;font-weight:700;letter-spacing:-.01em;',
       'color:#13345e;background:#fff;border-radius:6px;text-decoration:none;text-align:center;',
       'transition:background .15s;}',
       '.aqp-cta:hover{background:#e8edf6;}',
 
-      '.aqp-footnote{font-size:11.5px;line-height:1.6;color:#7089ad;}',
+      '.aqp-footnote{font-size:11.5px;line-height:1.5;color:#7089ad;}',
 
       /* 하단 버튼 */
       '.aqp-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;',
-      'margin-top:1px;padding-top:12px;border-top:1px solid rgba(255,255,255,.1);}',
-      '.aqp-textbtn{padding:7px 4px;font:inherit;font-size:12.5px;background:transparent;border:0;',
+      'margin-top:0;padding-top:10px;border-top:1px solid rgba(255,255,255,.1);}',
+      '.aqp-textbtn{padding:5px 4px;font:inherit;font-size:12.5px;background:transparent;border:0;',
       'color:#7f9fe0;cursor:pointer;border-radius:4px;}',
       '.aqp-textbtn:hover{color:#fff;text-decoration:underline;}',
       '.aqp-textbtn--close{color:#aebfd6;font-weight:600;}',
