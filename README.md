@@ -31,6 +31,7 @@
 ├── hiring/index.html       채용 평가 페이지 (/hiring/)
 ├── diagnosis/index.html    조직 역량 진단 페이지 (/diagnosis/)
 ├── privacy/index.html      개인정보 처리방침 (/privacy/)
+├── privacy/v1-1/index.html 이전 버전 처리방침 보관본 (/privacy/v1-1/, 검색 제외)
 │
 ├── contact-config.js       문의 폼 전송 주소 설정
 ├── contact-form.js         문의 폼 동작 로직 (공통)
@@ -59,7 +60,8 @@
 | `/` | `index.html` | 메인. 철학 → 문제 → 솔루션 → 차별점 → 지표 → FAQ → 문의 |
 | `/hiring/` | `hiring/index.html` | 채용 평가 소개 + 가격 플랜 |
 | `/diagnosis/` | `diagnosis/index.html` | 조직 역량 진단 소개 |
-| `/privacy/` | `privacy/index.html` | 개인정보 처리방침 |
+| `/privacy/` | `privacy/index.html` | 개인정보 처리방침 (현행) |
+| `/privacy/v1-1/` | `privacy/v1-1/index.html` | 이전 버전(v1.1) 보관본. `noindex` 로 검색 제외, sitemap 미등록 |
 
 주소에 `.html` 을 붙이지 않습니다. 폴더 안의 `index.html` 을 쓰는 방식이라
 `/hiring/` 처럼 **끝에 슬래시(/)** 를 붙인 주소가 정식 주소입니다.
@@ -178,6 +180,17 @@ http://localhost:8000/?promo=preview
 - `sitemap.xml` : 페이지 4개 등록. **페이지를 추가하면 여기에도 추가해야 합니다**
 - 각 페이지에 `canonical`, `og:` 태그가 `https://aqbar.ai/...` 기준으로 설정되어 있습니다
 - 현재 검색 차단(noindex)은 **걸려 있지 않습니다** — 검색에 정상 노출되는 상태입니다
+
+---
+
+## 개인정보 처리방침 개정 절차
+
+1. 현재 `privacy/index.html` 을 `privacy/vX-Y/index.html` 로 복사해 보관합니다.
+   본문은 그대로 두고 `noindex`, 제목의 버전 표기, 상단 안내(적용 기간과 현행 방침 링크)만 추가합니다
+2. `privacy/index.html` 을 새 버전으로 수정하고 버전·고지일·시행일, 제14조 변경 이력을 갱신합니다
+3. 실질적인 변경은 **시행 7일 전**에 게시하고, 시행일 전까지 상단에 "시행 예정" 안내를 둡니다
+4. 시행일이 지나면 "시행 예정" 안내만 삭제합니다
+5. `sitemap.xml` 의 `/privacy/` `lastmod` 를 게시일로 바꿉니다
 
 ---
 
